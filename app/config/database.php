@@ -82,7 +82,14 @@ return array(
 			'password' => '',
 			'prefix'   => '',
 		),
-
+		'mongodb' => array(
+		    'driver'   => 'mongodb',
+		    'host'     => 'localhost',
+		    'port'     => 27017,
+		    'username' => 'username',
+		    'password' => 'password',
+		    'database' => 'database'
+		),
 	),
 
 	/*
@@ -118,7 +125,5 @@ return array(
 			'port'     => 6379,
 			'database' => 0,
 		),
-
 	),
-
 );

@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'j1ACf9g04ldvxSmbIrD9H9m6nU5w6X7J',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -106,7 +106,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-
+		'Jenssegers\Mongodb\MongodbServiceProvider'
 	),
 
 	/*
