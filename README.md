@@ -47,10 +47,20 @@ Format version akan menggunakan [Semver](http://semver.org)
 sudo pecl install mongo
 ```
 
-### TODO
+### NodeJS
 
-- [x] Api: mobile -> api -> python -> nodejs (async)
-- [x] Web: user register & login
-- [ ] Unit Test
-- [ ] Verifikasi report dengan user terdekat
-- [ ] Mengambil data suatu wilayah + data usernya
+[Install NodeJS WithOut Sudo](https://gist.github.com/isaacs/579814#file-only-git-all-the-way-sh)
+
+### ForeverJS
+
+```
+npm install -g forever
+```
+
+### Realtime Runner
+
+```
+cd realtime
+npm install
+forever start /path/to/ganapatih/web/realtime/index.js
+```

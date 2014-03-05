@@ -1,8 +1,10 @@
 *.log
-composer.lock
+*.komodoproject
+#composer.lock
 /bootstrap/compiled.php
 /vendor
 app/config/local-hiraq
+app/config/hiraq
 composer.phar
 .env.local.php
 .env.php

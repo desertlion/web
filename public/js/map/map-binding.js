@@ -5,15 +5,23 @@
 	MyMap.loadMarker();
 	
 	//var mapUpdate = io.connect('http://localhost:8080/mapUpdate');
-	
-	var mapUpdate = io.connect('http://ganapatih.tulisanhiraq.net:8080/mapUpdate');
-
+    var ioUrl = socketUrl + 'mapUpdate';
+    
+	var mapUpdate = io.connect(ioUrl);
+   
 	mapUpdate.on('connect', function () {
 	 
-		mapUpdate.on('newMarker', function(data) {
-
+		mapUpdate.on('newMarkerMap', function(data) {
+            
 			// data untuk marker baru di map ada disini
-			MyMap.putMarker(data);
+            
+            /*
+             * fix bug double data
+             */
+            if (data.location.length == 2) {               
+               MyMap.putMarker(data);
+            }
+			
 		});
 		
 	});
