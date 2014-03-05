@@ -66,18 +66,18 @@ var MyMap={
 		var InfoString1 =  	'<div class="info-window"> '+
 							'<div class="info-header">  '+
 							'	<h3> '+ Obj.name+' </h3> '+
-							'	<h4> Contact : '+ Obj.phone+' </h4> '+
-							'	<h4> Location : latitude '+ Obj.location[0] +', longitude '+ Obj.location[1]  +' </h4> '+
+							'	<h4 class="detail-row"><span class="map-detail-label">Contact :</span><span class="map-detail-desc">'+ Obj.phone+'</span></h4> '+
+							'	<h4 class="detail-row"><span class="map-detail-label">Location :</span><span class="map-detail-desc">latitude '+ Obj.location[0] +', longitude '+ Obj.location[1]  +'</span></h4> '+
 							'</div> '+
 
 							'<div class="info-body">   '+ 
 							'<p class="description">	'+ Obj.desc+' </p> '+
 							'<ul class="detail"> '+
-							'	<li>  Time :  '+ Obj.datetime+' </li> '+
-							'	<li>  location :  latitude '+ Obj.location[0] +', longitude '+ Obj.location[1]  +'  </li> '+
-							'	<li>  phone : '+ Obj.phone+'  </li> '+
-							'	<li>  status : '+ Obj.status +'  </li> '+
-							'	<li>  Type : '+  Obj.type_victim +'  </li>  '+
+							'	<li class="detail-row"><span class="map-detail-label">Time :</span><span class="map-detail-desc"> '+ Obj.datetime+'</span></li> '+
+							'	<li class="detail-row"><span class="map-detail-label">location :</span><span class="map-detail-desc"> latitude '+ Obj.location[0] +', longitude '+ Obj.location[1]  +' </span></li> '+
+							'	<li class="detail-row"><span class="map-detail-label">phone :</span><span class="map-detail-desc">'+ Obj.phone+' </span></li> '+
+							'	<li class="detail-row"><span class="map-detail-label">status :</span><span class="map-detail-desc">'+ Obj.status +' </span></li> '+
+							'	<li class="detail-row"><span class="map-detail-label">Type :</span><span class="map-detail-desc">'+  Obj.type_victim +' </span></li>  '+
 							'</ul>	 '+
 							'</div> '+
 							'</div> ';

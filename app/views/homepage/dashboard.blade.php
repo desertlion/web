@@ -95,7 +95,5 @@
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="{{ asset('js/map/map.js') }}"></script>
 	<script src="{{ asset('js/map/map-binding.js') }}"></script>	 
-	
-	 <script src="http://localhost:8080/socket.io/socket.io.js"></script> 
-       
+	<script src="http://localhost:8080/socket.io/socket.io.js"></script>        
 @stop
